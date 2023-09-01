@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="calc"id ="calc">
+            <div class="output"id ="output">
+                <input type="text" id="screen">
+            </div>
+            <div class="buttons">
+                <button onclick="clearDis()" class="btn">clr</button>
+                <div class="row">
+                    <button class="btn" onclick="btnclick(7)">7</button>
+                    <button class="btn" onclick="btnclick(8)">8</button>
+                    <button class="btn" onclick="btnclick(9)">9</button>
+                    <button class="btn" onclick="btnclick('/')">/</button>
+                </div>
+                <div class="row">
+                    <button class="btn" onclick="btnclick(4)">4</button>
+                    <button class="btn"onclick="btnclick(5)">5</button>
+                    <button class="btn" onclick="btnclick(6)">6</button>
+                    <button class="btn" onclick="btnclick('*')">*</button>
+                </div>
+                <div class="row">
+                    <button class="btn" onclick="btnclick(1)">1</button>
+                    <button class="btn"onclick="btnclick(2)">2</button>
+                    <button class="btn" onclick="btnclick(3)">3</button>
+                    <button class="btn" onclick="btnclick('-')">-</button>
+                </div>
+                <div class="row">
+                    <button class="btn" onclick="btnclick(0)">0</button>
+                    <button class="btn"onclick="btnclick('.')">.</button>
+                    <button class="btn" onclick="result()">=</button>
+                    <button class="btn" onclick="btnclick('+')">+</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
